@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+}
+.application{
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+}
+
+.selectTeamBtn{
+    background-color: #2f2f2f;
+    color:#d9d9d9;
+    display: flex;
+    max-height: 30px;
+    height: 100%;
+    max-width: 315px;
+    width: 100%;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    /* border-radius: 10px; */
+    /* margin: 10px; */
+    padding: 10px;
+    /* border-bottom: 2px solid grey; */
+}
+.selectTeamBtn:hover{
+    background-color: #3c3c3c;
+}
+.selectTeamBtn span{
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+.optionsContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background-color: #2f2f2f;
+    max-height: 425px;
+    height: 100%;
+    max-width: 315px;
+    width: 100%;
+    z-index: 1;
+    /* border-radius: 10px; */
+}
+.optionsContainer.active{
+    display: none;
+}
+.options{
+    overflow: scroll;
+    scrollbar-color: red;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    line-height: 30px;
+    width: 100%;
+    text-align:justify;
+    
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: #2f2f2f;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+.options li{
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    font-size: 15px;
+    color: #d9d9d9;
+    cursor: pointer;
+    /* border-bottom: 1px solid grey; */
+}
+.options li:hover{
+    background-color: #3c3c3c;
+}
+.options img{
+    width: 25px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.container{
+    width: 100%;
+    max-width: 315px;
+    max-height: 425px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+    position: absolute;
+    z-index: 0;
+    background-color: #2f2f2f;
+    /* border: 1px solid red; */
+    overflow-x: hidden;
+}
+.secondLogoLeft{
+   display:flex;
+   position: absolute;
+   left: 100px;
+   width: 250px;
+}
+.secondLogoRight{
+   display:flex;
+   position: absolute;
+   right: 100px;
+   width: 250px;
+}
+.info th{
+    font-size: 14px;
+    text-align:justify;
+    color: #d9d9d9;
+
+}
+#myTable{
+    color: #d9d9d9;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 30px;
+}
+tr:nth-child(odd){
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    
+}
+tr:nth-child(even){
+    background-color: #3c3c3c;
+    border-radius: 10px;
+}
+table tbody{
+    border: none;
+}
+
