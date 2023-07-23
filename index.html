@@ -168,11 +168,10 @@
 
 
 
-
+<script src="script.js"></script>
 <script>
 
  
-
 
 const optionMenu = document.querySelector(".optionsContainer");
 const selectBtn = document.querySelector(".selectTeamBtn");
@@ -193,7 +192,7 @@ selectBtn.addEventListener("click", ()=> optionMenu.classList.toggle("active"));
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '3c8b783d18msh28c6661c1cc8b90p173b04jsne95dfa9fe8f5',
+		'X-RapidAPI-Key': apiKey,
 		'X-RapidAPI-Host': 'tank01-mlb-live-in-game-real-time-statistics.p.rapidapi.com'
 	}
 };
